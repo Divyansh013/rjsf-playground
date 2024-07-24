@@ -1,5 +1,4 @@
 'use client'
-import dynamic from 'next/dynamic';
 import { useState } from 'react';
 import Form from '@rjsf/core';
 import { RJSFSchema, UiSchema } from '@rjsf/utils';
@@ -33,6 +32,9 @@ export default function Home() {
   } catch (e) {
     parsedUiSchema = {};
   }
+
+  console.log(parsedJsonSchema);
+  console.log(parsedUiSchema);
 
   return (
     <div className="flex h-screen">
